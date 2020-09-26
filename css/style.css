@@ -402,23 +402,16 @@ img {
 /* TAB */
 
 .tab{
-
+  background-color: var(--special-grey-light);
 }
 
 .tab-flex{
-  font-family: Gilroy;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 22px;
-  letter-spacing: 0,2em;
-  text-align: left;
   list-style: none;
 }
 
 .tab-flex-item-link:hover:before {
   height: 40px;
-  top: 10px;
+  top: 50%;
 }
 .tab-flex-item-link {
   display: block;
@@ -432,6 +425,7 @@ img {
   line-height: 22px;
   text-align: left;
 
+
   position: relative;
 
 
@@ -442,7 +436,7 @@ img {
 .tab-flex-item-link:before{
   content:"";
   width: 160px;
-  height: 9px;
+  height: 8px;
   z-index: -1;
   background-color: var(--special-yellow-dark);
 
