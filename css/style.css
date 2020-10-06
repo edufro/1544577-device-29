@@ -390,88 +390,55 @@ img {
   padding-left: 0;
 }
 
+.goods-list-item-link{
+  display: block;
+  height: 160px;
+  width: 160px;
+  background-color: var(--special-yellow-light);
+  position: relative;
 }
-.goods-list-item:hover:before {
+
+.link-VR{
+  margin-top: 52px;
+  margin-left: 31px;
+}
+
+.goods-list-item-link:hover {
+  content: "";
+  height: 160px;
+  width: 160px;
   background-color: var(--special-yellow-dark);
 }
 
-
-.link-1{
-  display: block;
-  height: 108px;
-  width: 108px;
-  padding-right: 31px;
-  padding-top: 52px;
-  padding-left: 31px;
-  background-color: var(--special-yellow-light);
+.goods-list-item-link:active > .link-img{
+  opacity: 0.3;
 }
 
-.link-2{
-  display: block;
-  height: 134px;
-  width: 113px;
-  padding-right: 20px;
-  padding-top: 26px;
-  padding-left: 37px;
-  background-color: var(--special-yellow-light);
+.link-selfi{
+  margin-top: 26px;
+  margin-left: 37px;
 }
 
-.link-3{
-  display: block;
-  height: 124px;
-  width: 115px;
-  padding-right: 11px;
-  padding-top: 36px;
-  padding-left: 44px;
-  background-color: var(--special-yellow-light);
+.link-camera{
+  margin-top: 36px;
+  margin-left: 44px;
 }
 
-.link-4{
-  display: block;
-  height: 108px;
-  width: 108px;
-  padding-right: 31px;
-  padding-top: 52px;
-  padding-left: 31px;
-  background-color: var(--special-yellow-light);
+.link-fitnes{
+  margin-top: 48px;
+  margin-left: 27px;
 }
 
-.link-5{
-  display: block;
-  height: 129px;
-  width: 108px;
-  padding-right: 10px;
-  padding-top: 31px;
-  padding-left: 52px;
-  background-color: var(--special-yellow-light);
+.link-clocks{
+  margin-top: 31px;
+  margin-left: 52px;
 }
 
-.link-6{
-  display: block;
-  height: 108px;
-  width: 108px;
-  padding-right: 31px;
-  padding-top: 52px;
-  padding-left: 31px;
-  background-color: var(--special-yellow-light);
+.link-copter{
+  margin-top: 46px;
+  margin-left: 14px;
 }
 
-.goods-list-item:before{
-  content:"";
-
-  z-index: -1;
-  background-color: var(--special-yellow-light);
-
-  position: absolute;
-}
-
-.goods-list-item:active{
-  background-color: var(--special-yellow-dark);
-}
-
-.goods-list-item:hover > .goods-list-item-image{
-  opacity: 0.3px;
-}
 
 /* TAB */
 
