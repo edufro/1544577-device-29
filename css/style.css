@@ -87,6 +87,8 @@ img {
 }
 
 .user-navigation{
+  display: grid;
+  grid-template-columns: 1fr;
   color: var(--basic-black);
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -107,17 +109,38 @@ img {
   text-align: left;
 }
 
+.navigation-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--basic-black);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation-list-item{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
 .user-navigation{
   list-style: none;
   padding-left: 0;
 }
 
 .header-navigation{
-  list-style: none;
-  padding-left: 0;
-}
-
-.dropdown-navigation{
   list-style: none;
   padding-left: 0;
 }
@@ -131,6 +154,9 @@ img {
 }
 
 .header-navigation{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 38px;
   text-transform: uppercase;
   color: var(--basic-black);
   font-family: 'Gilroy', sans-serif;
@@ -154,9 +180,37 @@ img {
   padding-left: 0;
 }
 
+.header-contacts{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 110px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0,2em;
+  text-align: left;
+}
+
+.header-contacts-item{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0,2em;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
 /* dropdown */
 
-.dropdown-navigation{
+.dropdown{
+  padding-left: 60px;
   color: var(--basic-black);
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -168,16 +222,24 @@ img {
   background-color: var(--special-yellow-light);
 }
 
-.dropdown-navigation-item{
-  font-family: 'Open Sans';
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  list-style: none;
-  padding-left: 0;
+.dropdown-list{
+list-style: none;
+padding-left: 0;
+}
+
+.list-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Search */
@@ -281,6 +343,7 @@ img {
   text-transform: uppercase;
   background-color: var(--special-yellow-light);
   border: none;
+  padding-left: 0;
 }
 
 .header-button:hover{
@@ -293,6 +356,11 @@ img {
 
 
 /* Slider */
+
+.slide{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .slider-control{
   list-style: none;
@@ -359,6 +427,7 @@ img {
   line-height: 15px;
   letter-spacing: 0,1em;
   text-align: left;
+  margin-left: 0;
 
 }
 .slide-subtitle{
@@ -370,6 +439,12 @@ img {
   line-height: 42px;
   letter-spacing: 0,1em;
   text-align: left;
+  margin-left: 0;
+}
+
+.slide-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .slide-text{
@@ -386,6 +461,9 @@ img {
 /* Goods */
 
 .goods-list{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 40px;
   list-style: none;
   padding-left: 0;
 }
@@ -412,7 +490,10 @@ img {
 /* TAB */
 
 .tab{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--special-grey-light);
+
 }
 
 .tab-flex{
@@ -442,7 +523,21 @@ img {
   background-color: var(--basic-black);
 }
 
+.tab-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -29px;
+}
+
+.tab-control{
+  display: grid;
+  grid-template-rows: 1fr 277px;
+  margin-top: -29px;
+  padding-left: 140px;
+}
+
 .tab-content-text{
+
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -466,8 +561,16 @@ img {
 /* Brands */
 
 .brand-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
   padding-left: 0;
+}
+
+
+.double-block{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .delivery-body-list{
@@ -535,7 +638,10 @@ img {
   background-color: var(--basic-dark);
 }
 
+
 .footer-navigation{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -548,7 +654,9 @@ img {
   padding-left: 0;
 }
 
-.footer-contacts-menu{
+.footer-navigation-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -570,9 +678,18 @@ img {
   letter-spacing: 0em;
   text-align: left;
   color: var(--special-white-a7);
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-social-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   padding-left: 0;
 }
@@ -625,7 +742,11 @@ img {
   letter-spacing: 0em;
   text-align: left;
   color: var(--special-white-a7);
-  list-style-position: inside;
+}
+
+.footer-contacts-menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts-menu-tab{
@@ -743,14 +864,6 @@ img {
   text-align: left;
 }
 
-.filter-field{
-
-}
-
-.sort{
-
-}
-
 .sort-list{
   list-style: none;
   padding-left: 0;
@@ -787,11 +900,9 @@ img {
 
 .shop-list-item{
   display: block;
-  width: 360px;
-  height: 380px;
   position: relative;
   margin-right: 0;
-  margin-bottom: 120px;
+
 }
 
 .shop-list-item-hidden {
@@ -941,4 +1052,51 @@ img {
 
 .item-active{
   opacity: 1;
+}
+
+
+/* grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-navigation{
+  display: grid;
+}
+
+.container{
+  width: 1160px;
+  justify-self: center;
+  padding-left: 140px;
+  padding-top: 40px;
+}
+
+.header-grid-container{
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr 290px 220px;
+}
+
+.site-navigation{
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr 290px 220px;
+}
+
+.header-logo{
+padding-left: 60px;
+margin-top: -20px;
+}
+
+.footer-logo{
+  margin-top: 64px;
+  margin-bottom: 40px;
 }
